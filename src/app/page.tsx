@@ -1,10 +1,19 @@
-import Header from '@/components/Header/Header';
-import Image from "next/image";
+import Header from '@/src/components/Header/Header';
 
 export default function Home() {
   return (
     <>
       <Header />
+      <main className="flex flex-col w-full min-h-full m-0 bg-white dark:bg-black">
+        <section className="flex flex-1 min-h-dvh w-full flex-col items-center justify-center home-page__hero relative">
+          <div className="container w-full md:w-3/4 lg:w-1/2">
+            <h1 className='mb-4 uppercase text-6xl max-md:text-xl max-md:leading-7 leading-14 tracking-tight text-background text-center'>Discover how company brings contemporary refinement into every room of your home</h1>
+            <p className='text-sm leading-4 text-background text-center in-brackets'>We see your entire home as an ecosystem where everything is connected and flows into each other in a harmony of perfect movements. Taking this approach, we create unique solutions through a wide variety of compositions, materials and take care to customize every detail to make your home as unique as you are.</p>
+          </div>
+          <p className="uppercase text-base tracking-wide text-white absolute bottom-2">scroll</p>
+        </section>
+        
+      </main>
     </>
     // <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
     //   <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
