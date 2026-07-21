@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import CustomCursor from '../components/CustomCursor/CustomCursor';
-import { Montaga, JetBrains_Mono } from "next/font/google";
+import { Montaga } from "next/font/google";
 import localFont from "next/font/local";
 import { cn } from "@/src/lib/utils";
 import "./globals.css";
-
-const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-mono'});
 
 const montaga = Montaga({
   variable: "--font-montaga",
@@ -47,7 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", ptfuturaFont.variable, montaga.variable, "font-mono", jetbrainsMono.variable)}
+      className={cn("h-full", "antialiased", montaga.variable, ptfuturaFont.variable)}
     >
       <body className="min-h-full flex flex-col">
         <CustomCursor />
