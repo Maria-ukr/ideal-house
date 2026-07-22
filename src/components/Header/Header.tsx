@@ -91,15 +91,14 @@ const Header = () => {
             {navLinks && navLinks.map((link) => {
             return (
               <NavigationMenuItem key={link.title} className="uppercase">
-                  {!link?.submenu ? <NavigationMenuLink href={link.path} className="uppercase">
+                  {!link?.submenu ? <NavigationMenuLink className="uppercase" render={<Link href={link.path} />}>
                     {link.title}
                   </NavigationMenuLink> : <>
                   <NavigationMenuTrigger className="uppercase">{link.title}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   {link?.submenu && link?.submenu.map((sublink) => {
                     return (
-                      <NavigationMenuLink key={sublink?.title} href={sublink?.path}>
-                        {sublink?.title}
+                      <NavigationMenuLink key={sublink?.title} render={<Link href={sublink?.path} />}>{sublink?.title}
                       </NavigationMenuLink>
                     )
                   })}
