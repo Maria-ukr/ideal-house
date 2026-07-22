@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col w-full min-h-full m-0 bg-white dark:bg-black">
+      <main className="flex flex-col w-full min-h-full m-0">
         <section className="flex flex-1 min-h-dvh w-full flex-col items-center justify-center home-page__hero relative">
           <div className="container w-full md:w-3/4 lg:w-1/2">
             <h1 className='mb-4 uppercase text-6xl max-md:text-xl max-md:leading-7 leading-14 tracking-tight text-center'>Discover how company brings contemporary refinement into every room of your home</h1>
