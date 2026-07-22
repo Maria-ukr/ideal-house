@@ -30,10 +30,6 @@ const navLinks = [
         title: "Commercial Interior Design",
         path: "/interior-design/commercial-interior-design",
       },
-      {
-        title: "next page",
-        path: "/interior-design/next-page",
-      },
     ]
   },
   {

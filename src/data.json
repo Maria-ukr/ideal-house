@@ -12,27 +12,198 @@
   "interior-architecture": {
     "title": "Interior Architecture",
     "subtitle": "Bridging structural forms and exquisite finishings to rethink structural layouts, optimize spatial volumes, and maximize your property's potential.",
-    "bgImage": "/images/interior-design/architecture-bg.jpg"
+    "bgImage": "/images/interior-design/architecture-bg.jpg",
+    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "kitchenDescriptions": {
+      "leftImg": "/images/renovation/kitchen-left.jpg",
+      "rightImg": "/images/renovation/kitchen-right.jpg",
+      "tablet": {
+        "tabletTitle": "The synthesis of emotions and functional innovative design",
+        "rows": [{
+          "one": "Each of our kitchens is custom designed to meet the individual needs of the people that use them.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        },
+        {
+          "one": "Our kitchens focus on how to achieve a refined contemporary minimalist aesthetic while keeping everything conveniently organized and adding value to your space.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        }]
+      }
+    },
+    "kitchenTarget": {
+      "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
+      "image": "/images/renovation/kitchenTarget-1.jpg",
+      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+    },
+    "kitchenCollections": {
+      "title": "collections",
+      "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
+      "fileTitle": "download the moralia catalogue",
+      "filelink": "/"
+    },
+    "projects": [
+      {
+        "title": "enchantment",
+        "image": "/images/renovation/enchantment.jpg",
+        "link": "/"
+      },
+      {
+        "title": "prism",
+        "image": "/images/renovation/kitchen-right.jpg",
+        "link": "/"
+      },
+      {
+        "title": "century",
+        "image": "/images/renovation/dream-kitchen-bg.png",
+        "link": "/"
+      }
+    ]
   },
   "lighting-design": {
     "title": "Architectural Lighting Design",
     "subtitle": "Illuminate your space beautifully. We design intelligent lighting systems that enhance architectural features, set the perfect atmosphere, and adapt to your daily lifestyle.",
-    "bgImage": "/images/interior-design/lighting-design-bg.jpg"
+    "bgImage": "/images/interior-design/lighting-design-bg.jpg",
+    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "kitchenDescriptions": {
+      "leftImg": "/images/renovation/kitchen-left.jpg",
+      "rightImg": "/images/renovation/kitchen-right.jpg",
+      "tablet": {
+        "tabletTitle": "The synthesis of emotions and functional innovative design",
+        "rows": [{
+          "one": "Each of our kitchens is custom designed to meet the individual needs of the people that use them.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        },
+        {
+          "one": "Our kitchens focus on how to achieve a refined contemporary minimalist aesthetic while keeping everything conveniently organized and adding value to your space.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        }]
+      }
+    },
+    "kitchenTarget": {
+      "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
+      "image": "/images/renovation/kitchenTarget-1.jpg",
+      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+    },
+    "kitchenCollections": {
+      "title": "collections",
+      "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
+      "fileTitle": "download the moralia catalogue",
+      "filelink": "/"
+    },
+    "projects": [
+      {
+        "title": "enchantment",
+        "image": "/images/renovation/enchantment.jpg",
+        "link": "/"
+      },
+      {
+        "title": "prism",
+        "image": "/images/renovation/kitchen-right.jpg",
+        "link": "/"
+      },
+      {
+        "title": "century",
+        "image": "/images/renovation/dream-kitchen-bg.png",
+        "link": "/"
+      }
+    ]
   },
   "residential-interior-design": {
     "title": "Residential Interior Design",
     "subtitle": "Curating elegant, highly personalized living environments that mirror your personal taste while optimizing space, flow, textures, and bespoke furniture placement.",
-    "bgImage": "/images/interior-design/residential-bg.jpg"
+    "bgImage": "/images/interior-design/residential-bg.jpg",
+    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "kitchenDescriptions": {
+      "leftImg": "/images/renovation/kitchen-left.jpg",
+      "rightImg": "/images/renovation/kitchen-right.jpg",
+      "tablet": {
+        "tabletTitle": "The synthesis of emotions and functional innovative design",
+        "rows": [{
+          "one": "Each of our kitchens is custom designed to meet the individual needs of the people that use them.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        },
+        {
+          "one": "Our kitchens focus on how to achieve a refined contemporary minimalist aesthetic while keeping everything conveniently organized and adding value to your space.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        }]
+      }
+    },
+    "kitchenTarget": {
+      "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
+      "image": "/images/renovation/kitchenTarget-1.jpg",
+      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+    },
+    "kitchenCollections": {
+      "title": "collections",
+      "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
+      "fileTitle": "download the moralia catalogue",
+      "filelink": "/"
+    },
+    "projects": [
+      {
+        "title": "enchantment",
+        "image": "/images/renovation/enchantment.jpg",
+        "link": "/"
+      },
+      {
+        "title": "prism",
+        "image": "/images/renovation/kitchen-right.jpg",
+        "link": "/"
+      },
+      {
+        "title": "century",
+        "image": "/images/renovation/dream-kitchen-bg.png",
+        "link": "/"
+      }
+    ]
   },
   "commercial-interior-design": {
     "title": "Commercial Interior Design",
     "subtitle": "Elevating corporate spaces, premium hospitality venues, and retail environments with highly practical layouts that amplify your brand's philosophy.",
-    "bgImage": "/images/interior-design/commercial-bg.jpg"
-  },
-  "next-page": {
-    "title": "Bespoke Design Innovations",
-    "subtitle": "Exploring the next evolution in premium residential layout structures and modern materials curated by Oraanj.",
-    "bgImage": "/images/interior-design/next-page-bg.jpg"
+    "bgImage": "/images/interior-design/commercial-bg.jpg",
+    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "kitchenDescriptions": {
+      "leftImg": "/images/renovation/kitchen-left.jpg",
+      "rightImg": "/images/renovation/kitchen-right.jpg",
+      "tablet": {
+        "tabletTitle": "The synthesis of emotions and functional innovative design",
+        "rows": [{
+          "one": "Each of our kitchens is custom designed to meet the individual needs of the people that use them.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        },
+        {
+          "one": "Our kitchens focus on how to achieve a refined contemporary minimalist aesthetic while keeping everything conveniently organized and adding value to your space.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        }]
+      }
+    },
+    "kitchenTarget": {
+      "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
+      "image": "/images/renovation/kitchenTarget-1.jpg",
+      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+    },
+    "kitchenCollections": {
+      "title": "collections",
+      "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
+      "fileTitle": "download the moralia catalogue",
+      "filelink": "/"
+    },
+    "projects": [
+      {
+        "title": "enchantment",
+        "image": "/images/renovation/enchantment.jpg",
+        "link": "/"
+      },
+      {
+        "title": "prism",
+        "image": "/images/renovation/kitchen-right.jpg",
+        "link": "/"
+      },
+      {
+        "title": "century",
+        "image": "/images/renovation/dream-kitchen-bg.png",
+        "link": "/"
+      }
+    ]
   },
   "about": {
     "title": "The Brand",
@@ -47,12 +218,100 @@
   "design-and-build": {
     "title": "Design & Build Services",
     "subtitle": "A seamless, end-to-end journey from initial architectural concept and interior spatial design through to planning permissions and flawless physical execution.",
-    "bgImage": "/images/renovation/design-build-bg.jpg"
+    "bgImage": "/images/renovation/design-build-bg.jpg",
+    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "kitchenDescriptions": {
+      "leftImg": "/images/renovation/kitchen-left.jpg",
+      "rightImg": "/images/renovation/kitchen-right.jpg",
+      "tablet": {
+        "tabletTitle": "The synthesis of emotions and functional innovative design",
+        "rows": [{
+          "one": "Each of our kitchens is custom designed to meet the individual needs of the people that use them.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        },
+        {
+          "one": "Our kitchens focus on how to achieve a refined contemporary minimalist aesthetic while keeping everything conveniently organized and adding value to your space.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        }]
+      }
+    },
+    "kitchenTarget": {
+      "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
+      "image": "/images/renovation/kitchenTarget-1.jpg",
+      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+    },
+    "kitchenCollections": {
+      "title": "collections",
+      "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
+      "fileTitle": "download the moralia catalogue",
+      "filelink": "/"
+    },
+    "projects": [
+      {
+        "title": "enchantment",
+        "image": "/images/renovation/enchantment.jpg",
+        "link": "/"
+      },
+      {
+        "title": "prism",
+        "image": "/images/renovation/kitchen-right.jpg",
+        "link": "/"
+      },
+      {
+        "title": "century",
+        "image": "/images/renovation/dream-kitchen-bg.png",
+        "link": "/"
+      }
+    ]
   },
   "construction-company": {
     "title": "Construction & Structural Excellence",
     "subtitle": "Delivering high-end residential and commercial construction services with precision engineering, reliable project management, and uncompromised build quality from foundation to finish.",
-    "bgImage": "/images/renovation/construction-bg.jpg"
+    "bgImage": "/images/renovation/construction-bg.jpg",
+    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "kitchenDescriptions": {
+      "leftImg": "/images/renovation/kitchen-left.jpg",
+      "rightImg": "/images/renovation/kitchen-right.jpg",
+      "tablet": {
+        "tabletTitle": "The synthesis of emotions and functional innovative design",
+        "rows": [{
+          "one": "Each of our kitchens is custom designed to meet the individual needs of the people that use them.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        },
+        {
+          "one": "Our kitchens focus on how to achieve a refined contemporary minimalist aesthetic while keeping everything conveniently organized and adding value to your space.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        }]
+      }
+    },
+    "kitchenTarget": {
+      "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
+      "image": "/images/renovation/kitchenTarget-1.jpg",
+      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+    },
+    "kitchenCollections": {
+      "title": "collections",
+      "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
+      "fileTitle": "download the moralia catalogue",
+      "filelink": "/"
+    },
+    "projects": [
+      {
+        "title": "enchantment",
+        "image": "/images/renovation/enchantment.jpg",
+        "link": "/"
+      },
+      {
+        "title": "prism",
+        "image": "/images/renovation/kitchen-right.jpg",
+        "link": "/"
+      },
+      {
+        "title": "century",
+        "image": "/images/renovation/dream-kitchen-bg.png",
+        "link": "/"
+      }
+    ]
   },
   "dream-kitchen": {
     "title": "Dream kitchen",
@@ -106,7 +365,51 @@
   "bathroom": {
     "title": "Bespoke Bathrooms",
     "subtitle": "Transform your bathroom into a private sanctuary of relaxation and luxury. Our tailored bathroom renovations combine premium materials, elegant fixtures, and smart layouts to maximize comfort and elegance.",
-    "bgImage": "/images/renovation/bathroom-bg.jpg"
+    "bgImage": "/images/renovation/bathroom-bg.jpg",
+    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "kitchenDescriptions": {
+      "leftImg": "/images/renovation/kitchen-left.jpg",
+      "rightImg": "/images/renovation/kitchen-right.jpg",
+      "tablet": {
+        "tabletTitle": "The synthesis of emotions and functional innovative design",
+        "rows": [{
+          "one": "Each of our kitchens is custom designed to meet the individual needs of the people that use them.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        },
+        {
+          "one": "Our kitchens focus on how to achieve a refined contemporary minimalist aesthetic while keeping everything conveniently organized and adding value to your space.",
+          "two": "The materials that we use to manufacture our kitchens are meticulously selected to be highly resistant to everyday use, be easy to clean, hygienic and environmentally sustainable."
+        }]
+      }
+    },
+    "kitchenTarget": {
+      "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
+      "image": "/images/renovation/kitchenTarget-1.jpg",
+      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+    },
+    "kitchenCollections": {
+      "title": "collections",
+      "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
+      "fileTitle": "download the moralia catalogue",
+      "filelink": "/"
+    },
+    "projects": [
+      {
+        "title": "enchantment",
+        "image": "/images/renovation/enchantment.jpg",
+        "link": "/"
+      },
+      {
+        "title": "prism",
+        "image": "/images/renovation/kitchen-right.jpg",
+        "link": "/"
+      },
+      {
+        "title": "century",
+        "image": "/images/renovation/dream-kitchen-bg.png",
+        "link": "/"
+      }
+    ]
   },
   "careers": {
     "title": "Join the Team",
