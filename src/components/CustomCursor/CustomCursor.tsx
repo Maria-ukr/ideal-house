@@ -37,9 +37,9 @@ function CustomCursor() {
   if(!isClient) return null;
 
   return (
-    <motion.div className="pointer-events-none fixed top-0 left-0 z-990 -translate-x-1/2 -translate-y-1/2 mix-blend-difference" style={{x: smoothX, y: smoothY}}>
-      <div className="flex justify-center items-center rounded-full border border-white/50 w-6 h-6">
-        <div className="rounded-full bg-accent w-1 h-1" />
+    <motion.div className="pointer-events-none fixed top-0 left-0 z-990 -translate-x-1/2 -translate-y-1/2 mix-blend-difference custom-cursor" style={{x: smoothX, y: smoothY}}>
+      <div className="flex justify-center items-center rounded-full border border-white/50 w-6 h-6 custom-cursor__inner">
+        <div className="rounded-full bg-accent w-1 h-1 custom-cursor__inner-dot" />
       </div>
     </motion.div>
   )

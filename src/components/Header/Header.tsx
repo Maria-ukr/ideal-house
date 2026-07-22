@@ -76,8 +76,8 @@ const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 z-90 w-full bg-background/90 backdrop-blur-md">
-      <div className="container flex items-center justify-between mx-auto">
+    <header className="fixed top-0 left-0 z-90 w-full bg-foreground/90 backdrop-blur-md">
+      <div className="container flex items-center justify-between mx-auto text-background">
         <Link href="/">
           <Image 
           className="mr-auto py-1"
