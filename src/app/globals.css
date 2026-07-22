@@ -186,7 +186,6 @@ body:has(button:hover) .custom-cursor__inner {
   margin-right: auto;
 }
 .home-page__hero {
-  background-image: url('../public/images/home-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
