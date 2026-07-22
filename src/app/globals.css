@@ -230,14 +230,3 @@ body:has(button:hover) .custom-cursor__inner {
     background-image: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="kitchen__collections-svg" data-v-1c905370=""><path d="M16.349 11.76l-6.136 6.023-6.135-6.022 1.128-1.108 4.21 4.132V.854h1.595v13.93l4.21-4.131 1.128 1.108zm4.078 7.579H0v1.566h20.427v-1.566z" fill="%23fff"></path></svg>');
   }
 }
-
-.projects-types__item {
-    img {
-      opacity: 1;
-      visibility: visible;
-    }
-  &:hover img {
-    opacity: 1;
-    visibility: visible;
-  }
-}
