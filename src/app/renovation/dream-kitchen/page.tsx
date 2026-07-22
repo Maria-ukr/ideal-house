@@ -45,9 +45,11 @@ function Page() {
   const pageContent = pagesData[pageSlug] as KitchenPageContent;
   const {tabletTitle, rows} = pageContent.kitchenDescriptions.tablet;
 
+  const basePath = process.env.NODE_ENV === "production" ? "/ideal-house" : "";
+
   return (
     <main className="pb-20 flex flex-col gap-20 md:gap-40 w-full min-h-full">
-      <section className="flex flex-1 min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat darken-bg" style={{backgroundImage: `url(${pageContent.bgImage})`}}>
+      <section className="flex flex-1 min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat darken-bg" style={{backgroundImage: `url(${basePath}/${pageContent.bgImage})`}}>
         <div className="container w-full md:w-3/4 lg:w-1/2 z-2">
           <h1 className='mb-8 uppercase text-6xl max-md:text-4xl tracking-tight text-center'>{pageContent.title}</h1>
           <p className='text-sm leading-4 text-center in-brackets'>{pageContent.subtitle}</p>
@@ -59,7 +61,7 @@ function Page() {
       <section className="flex max-md:flex-col justify-between gap-10">
         <div className="max-h-[1000px] md:w-1/3 mt-10 aspect-4/5 overflow-hidden">
           <Image 
-            src={pageContent.kitchenDescriptions.leftImg} 
+            src={`${basePath}/${pageContent.kitchenDescriptions.leftImg}`} 
             width="498"
             height="622"
             alt=""
@@ -69,7 +71,7 @@ function Page() {
         <div className="container w-full md:w-2/3 mr-4">
           <div className="aspect-4/5 overflow-hidden max-w-[600px] ml-auto mb-32 mr-40">
             <Image 
-              src={pageContent?.kitchenDescriptions.rightImg} 
+              src={`${basePath}/${pageContent?.kitchenDescriptions.rightImg}`}
               width="500"
               height="500"
               alt=""
@@ -100,7 +102,7 @@ function Page() {
         <p className="max-w-full md:max-w-60 h-fit in-brackets">{pageContent.kitchenTarget.desc}</p>
         <div className=" md:w-2/3 aspect-10/6 overflow-hidden">
           <Image 
-            src={pageContent.kitchenTarget.image} 
+            src={`${basePath}/${pageContent.kitchenTarget.image}`} 
             width="498"
             height="622"
             alt=""
@@ -111,7 +113,7 @@ function Page() {
       <section>
         <div className="w-full aspect-[16/9]">
           <Image 
-            src={pageContent.kitchenTarget.imageFull} 
+            src={`${basePath}/${pageContent.kitchenTarget.imageFull}`}
             width="498"
             height="622"
             alt=""

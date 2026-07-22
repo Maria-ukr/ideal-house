@@ -73,6 +73,8 @@ const navLinks = [
 ]
 
 const Header = () => {
+
+  const basePath = process.env.NODE_ENV === "production" ? "/ideal-house" : "";
   const [navOpen, setNavOpen] = useState(false);
 
   return (
@@ -81,7 +83,7 @@ const Header = () => {
         <Link href="/">
           <Image 
           className="mr-auto py-1"
-          src="/images/logo-light.svg"
+          src={`${basePath}/images/logo-light.svg`}
           alt="Logo"
           loading="eager"
           width={70}

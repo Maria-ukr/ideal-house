@@ -13,6 +13,8 @@ interface ProjectItemProps {
 }
 
 function ProjectItem({el, index}: ProjectItemProps) {
+  
+  const basePath = process.env.NODE_ENV === "production" ? "/ideal-house" : "";
   const [coords, setCoords] = useState({x: 0, y: 0});
   const [isHovered, setIsHovered] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -35,7 +37,7 @@ function ProjectItem({el, index}: ProjectItemProps) {
         onMouseLeave={() => setIsHovered(false)}
         onMouseMove={handleMouseMove}>
         <Image 
-          src={el.image} 
+          src={`${basePath}/${el.image}`} 
           width="100"
           height="150"
           alt=""
