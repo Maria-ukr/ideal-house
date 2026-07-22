@@ -1,3 +1,4 @@
+"use client";
 import { useState, useRef } from 'react';
 import Image from 'next/image';
 
@@ -37,7 +38,7 @@ function ProjectItem({el, index}: ProjectItemProps) {
         onMouseLeave={() => setIsHovered(false)}
         onMouseMove={handleMouseMove}>
         <Image 
-          src={`${basePath}/${el.image}`} 
+          src={`${basePath}${el.image}`} 
           width="100"
           height="150"
           alt=""
