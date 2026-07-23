@@ -1,20 +1,24 @@
 {
   "home": {
-    "title": "Oraanj Interior Design & Renovation",
-    "subtitle": "Crafting exceptional architectural spaces, bespoke renovations, and luxury interior environments across London.",
+    "title": "Discover how company brings contemporary refinement into every room of your home",
+    "subtitle": "We see your entire home as an ecosystem where everything is connected and flows into each other in a harmony of perfect movements. Taking this approach, we create unique solutions through a wide variety of compositions, materials and take care to customize every detail to make your home as unique as you are.",
     "bgImage": "/images/home-bg.jpg"
   },
   "interior-design": {
+    "link": "/interior-design",
     "title": "Interior Design",
+    "category": "Design",
     "subtitle": "Transforming spaces through comprehensive luxury design, striking visual balance, and meticulously tailored solutions.",
-    "bgImage": "images/interior-design/main-bg.jpg"
+    "bgImage": "images/interior-design/interior-design-bg.jpg"
   },
   "interior-architecture": {
+    "link": "/interior-design/interior-architecture",
     "title": "Interior Architecture",
+    "category": "Design",
     "subtitle": "Bridging structural forms and exquisite finishings to rethink structural layouts, optimize spatial volumes, and maximize your property's potential.",
-    "bgImage": "images/interior-design/architecture-bg.jpg",
-    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
-    "kitchenDescriptions": {
+    "bgImage": "/images/interior-design/architecture-bg.jpg",
+    "serviceAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "serviceDescriptions": {
       "leftImg": "/images/renovation/kitchen-left.jpg",
       "rightImg": "/images/renovation/kitchen-right.jpg",
       "tablet": {
@@ -29,12 +33,12 @@
         }]
       }
     },
-    "kitchenTarget": {
+    "serviceTarget": {
       "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
-      "image": "/images/renovation/kitchenTarget-1.jpg",
-      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+      "image": "/images/renovation/serviceTarget-1.jpg",
+      "imageFull": "/images/renovation/serviceTarget-2.jpg"
     },
-    "kitchenCollections": {
+    "serviceCollections": {
       "title": "collections",
       "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
       "fileTitle": "download the moralia catalogue",
@@ -59,11 +63,13 @@
     ]
   },
   "lighting-design": {
+    "link": "/interior-design/lighting-design",
     "title": "Architectural Lighting Design",
+    "category": "Design",
     "subtitle": "Illuminate your space beautifully. We design intelligent lighting systems that enhance architectural features, set the perfect atmosphere, and adapt to your daily lifestyle.",
     "bgImage": "/images/interior-design/lighting-design-bg.jpg",
-    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
-    "kitchenDescriptions": {
+    "serviceAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "serviceDescriptions": {
       "leftImg": "/images/renovation/kitchen-left.jpg",
       "rightImg": "/images/renovation/kitchen-right.jpg",
       "tablet": {
@@ -78,12 +84,12 @@
         }]
       }
     },
-    "kitchenTarget": {
+    "serviceTarget": {
       "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
-      "image": "/images/renovation/kitchenTarget-1.jpg",
-      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+      "image": "/images/renovation/serviceTarget-1.jpg",
+      "imageFull": "/images/renovation/serviceTarget-2.jpg"
     },
-    "kitchenCollections": {
+    "serviceCollections": {
       "title": "collections",
       "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
       "fileTitle": "download the moralia catalogue",
@@ -107,12 +113,14 @@
       }
     ]
   },
-  "residential-interior-design": {
-    "title": "Residential Interior Design",
+  "bedroom": {
+    "link": "/interior-design/bedroom",
+    "title": "Bedroom Interior Design",
+    "category": "Design",
     "subtitle": "Curating elegant, highly personalized living environments that mirror your personal taste while optimizing space, flow, textures, and bespoke furniture placement.",
-    "bgImage": "images/interior-design/residential-bg.jpg",
-    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
-    "kitchenDescriptions": {
+    "bgImage": "/images/interior-design/bedroom-bg.jpg",
+    "serviceAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "serviceDescriptions": {
       "leftImg": "/images/renovation/kitchen-left.jpg",
       "rightImg": "/images/renovation/kitchen-right.jpg",
       "tablet": {
@@ -127,12 +135,12 @@
         }]
       }
     },
-    "kitchenTarget": {
+    "serviceTarget": {
       "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
-      "image": "/images/renovation/kitchenTarget-1.jpg",
-      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+      "image": "/images/renovation/serviceTarget-1.jpg",
+      "imageFull": "/images/renovation/serviceTarget-2.jpg"
     },
-    "kitchenCollections": {
+    "serviceCollections": {
       "title": "collections",
       "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
       "fileTitle": "download the moralia catalogue",
@@ -157,11 +165,13 @@
     ]
   },
   "commercial-interior-design": {
+    "link": "/interior-design/commercial-interior-design",
     "title": "Commercial Interior Design",
+    "category": "Design",
     "subtitle": "Elevating corporate spaces, premium hospitality venues, and retail environments with highly practical layouts that amplify your brand's philosophy.",
     "bgImage": "/images/interior-design/commercial-bg.jpg",
-    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
-    "kitchenDescriptions": {
+    "serviceAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "serviceDescriptions": {
       "leftImg": "/images/renovation/kitchen-left.jpg",
       "rightImg": "/images/renovation/kitchen-right.jpg",
       "tablet": {
@@ -176,12 +186,12 @@
         }]
       }
     },
-    "kitchenTarget": {
+    "serviceTarget": {
       "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
-      "image": "/images/renovation/kitchenTarget-1.jpg",
-      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+      "image": "/images/renovation/serviceTarget-1.jpg",
+      "imageFull": "/images/renovation/serviceTarget-2.jpg"
     },
-    "kitchenCollections": {
+    "serviceCollections": {
       "title": "collections",
       "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
       "fileTitle": "download the moralia catalogue",
@@ -206,21 +216,27 @@
     ]
   },
   "about": {
+    "link": "/about",
     "title": "The Brand",
+    "category": "About",
     "subtitle": "Discover the story, principles, and unparalleled design craftsmanship that define Oraanj's elite standard in London property design.",
     "bgImage": "/images/about-bg.jpg"
   },
   "renovation": {
+    "link": "/renovation",
     "title": "Renovation Excellence",
+    "category": "Renovation",
     "subtitle": "From complex structural overhauls to detailed surface finishes, we bring spaces back to life with uncompromised attention to structural integrity.",
-    "bgImage": "/images/renovation/main-bg.jpg"
+    "bgImage": "/images/renovation/renovation-bg.jpg"
   },
   "design-and-build": {
+    "link": "/renovation/design-and-build",
     "title": "Design & Build Services",
+    "category": "Renovation",
     "subtitle": "A seamless, end-to-end journey from initial architectural concept and interior spatial design through to planning permissions and flawless physical execution.",
-    "bgImage": "images/renovation/design-build-bg.jpg",
-    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
-    "kitchenDescriptions": {
+    "bgImage": "/images/renovation/design-build-bg.jpg",
+    "serviceAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "serviceDescriptions": {
       "leftImg": "/images/renovation/kitchen-left.jpg",
       "rightImg": "/images/renovation/kitchen-right.jpg",
       "tablet": {
@@ -235,12 +251,12 @@
         }]
       }
     },
-    "kitchenTarget": {
+    "serviceTarget": {
       "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
-      "image": "/images/renovation/kitchenTarget-1.jpg",
-      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+      "image": "/images/renovation/serviceTarget-1.jpg",
+      "imageFull": "/images/renovation/serviceTarget-2.jpg"
     },
-    "kitchenCollections": {
+    "serviceCollections": {
       "title": "collections",
       "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
       "fileTitle": "download the moralia catalogue",
@@ -265,11 +281,13 @@
     ]
   },
   "construction-company": {
+    "link": "/renovation/construction-company",
     "title": "Construction & Structural Excellence",
+    "category": "Renovation",
     "subtitle": "Delivering high-end residential and commercial construction services with precision engineering, reliable project management, and uncompromised build quality from foundation to finish.",
-    "bgImage": "images/renovation/construction-bg.jpg",
-    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
-    "kitchenDescriptions": {
+    "bgImage": "/images/renovation/construction-bg.jpg",
+    "serviceAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "serviceDescriptions": {
       "leftImg": "/images/renovation/kitchen-left.jpg",
       "rightImg": "/images/renovation/kitchen-right.jpg",
       "tablet": {
@@ -284,12 +302,12 @@
         }]
       }
     },
-    "kitchenTarget": {
+    "serviceTarget": {
       "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
-      "image": "/images/renovation/kitchenTarget-1.jpg",
-      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+      "image": "/images/renovation/serviceTarget-1.jpg",
+      "imageFull": "/images/renovation/serviceTarget-2.jpg"
     },
-    "kitchenCollections": {
+    "serviceCollections": {
       "title": "collections",
       "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
       "fileTitle": "download the moralia catalogue",
@@ -314,11 +332,13 @@
     ]
   },
   "dream-kitchen": {
+    "link": "/renovation/dream-kitchen",
     "title": "Dream kitchen",
+    "category": "Renovation",
     "subtitle": "A well-designed kitchen is more than a place to cook; it is the centre of everyday living, entertaining, and family life.",
-    "bgImage": "images/renovation/dream-kitchen-bg.png",
-    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
-    "kitchenDescriptions": {
+    "bgImage": "/images/renovation/dream-kitchen-bg.png",
+    "serviceAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "serviceDescriptions": {
       "leftImg": "/images/renovation/kitchen-left.jpg",
       "rightImg": "/images/renovation/kitchen-right.jpg",
       "tablet": {
@@ -333,12 +353,12 @@
         }]
       }
     },
-    "kitchenTarget": {
+    "serviceTarget": {
       "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
-      "image": "/images/renovation/kitchenTarget-1.jpg",
-      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+      "image": "/images/renovation/serviceTarget-1.jpg",
+      "imageFull": "/images/renovation/serviceTarget-2.jpg"
     },
-    "kitchenCollections": {
+    "serviceCollections": {
       "title": "collections",
       "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
       "fileTitle": "download the moralia catalogue",
@@ -363,11 +383,13 @@
     ]
   },
   "bathroom": {
+    "link": "/renovation/bathroom",
     "title": "Bespoke Bathrooms",
+    "category": "Renovation",
     "subtitle": "Transform your bathroom into a private sanctuary of relaxation and luxury. Our tailored bathroom renovations combine premium materials, elegant fixtures, and smart layouts to maximize comfort and elegance.",
-    "bgImage": "images/renovation/bathroom-bg.jpg",
-    "kitchenAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
-    "kitchenDescriptions": {
+    "bgImage": "/images/renovation/bathroom-bg.jpg",
+    "serviceAbout": "The Moralia kitchen is a concept that is constantly in the process of transformation. Our exclusive kitchens aim at creating a space within a home which perfectly reflects the needs of the people that use them and creates memorable elevating experiences. Each of our concepts and designs evokes an infinite number of modular compositions, materials, finishes and functional components in order to make every kitchen unique. Our design and development team is constantly working in dialogue with all the complexities of the contemporary kitchen in order to create lasting innovative products and forms that are both forward thinking, functional and meet the demands of the future.",
+    "serviceDescriptions": {
       "leftImg": "/images/renovation/kitchen-left.jpg",
       "rightImg": "/images/renovation/kitchen-right.jpg",
       "tablet": {
@@ -382,12 +404,12 @@
         }]
       }
     },
-    "kitchenTarget": {
+    "serviceTarget": {
       "desc": "(Re)defining what the kitchen of the future should look like and (Re)imagining the minimalist aesthetic where we break the traditional mold of everydayness and strive for new refined forms to complement the sophisticated contemporary life without causing any unnecessary noise.",
-      "image": "/images/renovation/kitchenTarget-1.jpg",
-      "imageFull": "/images/renovation/kitchenTarget-2.jpg"
+      "image": "/images/renovation/serviceTarget-1.jpg",
+      "imageFull": "/images/renovation/serviceTarget-2.jpg"
     },
-    "kitchenCollections": {
+    "serviceCollections": {
       "title": "collections",
       "desc": "Discover our collection of four different kitchen proposals displaying sophisticated innovative contemporary design and high attention to every detail, which may serve as a source of inspiration and as a point of reference for your future custom Moralia kitchen.",
       "fileTitle": "download the moralia catalogue",
@@ -412,11 +434,13 @@
     ]
   },
   "careers": {
+    "link": "/careers",
     "title": "Join the Team",
     "subtitle": "Grow your career alongside elite design architects, interior specialists, and technical project managers in our professional London workspace.",
     "bgImage": "/images/careers-bg.jpg"
   },
   "contact": {
+    "link": "/contact",
     "title": "Let's Connect",
     "subtitle": "Reach out to our professional team to discuss your next design concept, upcoming architectural planning, or luxury home renovation project.",
     "bgImage": "/images/contact-bg.jpg"
