@@ -1,21 +1,40 @@
 import Header from '@/src/components/Header/Header';
 import Footer from '@/src/components/Footer/Footer';
-import homeBg from '@/public/images/home-bg.jpg';
+import ServicesSlider from '@/src/components/ServicesSlider/ServicesSlider';
+
+import pagesData from "@/src/data.json";
+
+interface PageContent {
+  title: string;
+  subtitle: string;
+  bgImage: string;
+  link: string;
+}
+
+const pageContent = pagesData['home'] as PageContent;
+
+const basePath = process.env.NODE_ENV === "production" ? "/" : "";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main className="flex flex-col w-full min-h-full m-0">
-        <section className="flex flex-1 min-h-dvh w-full flex-col items-center justify-center home-page__hero relative" style={{backgroundImage:`url(${homeBg.src})`}}>
+        <section className="flex flex-1 min-h-dvh w-full flex-col items-center justify-center home-page__hero relative" style={{backgroundImage:`url(${basePath}${pageContent?.bgImage})`}}>
           <div className="container w-full md:w-3/4 lg:w-1/2">
-            <h1 className='mb-4 uppercase text-6xl max-md:text-xl max-md:leading-7 leading-14 tracking-tight text-center'>Discover how company brings contemporary refinement into every room of your home</h1>
-            <p className='text-sm leading-4 text-center in-brackets'>We see your entire home as an ecosystem where everything is connected and flows into each other in a harmony of perfect movements. Taking this approach, we create unique solutions through a wide variety of compositions, materials and take care to customize every detail to make your home as unique as you are.</p>
+            <h1 className='mb-4 uppercase text-3xl max-md:text-xl max-md:leading-5 leading-7 tracking-tight text-center'>{pageContent?.title}</h1>
+            <p className='text-sm leading-4 text-center in-brackets'>{pageContent?.subtitle}</p>
           </div>
           <p className="uppercase text-base tracking-wide absolute bottom-2">scroll</p>
         </section>
       </main>
-      <Footer />
+      <div className="relative">
+        <ServicesSlider />
+        <div className="absolute bottom-0 right-0 left-0">
+          <Footer />
+        </div>
+      </div>
+      
     </>
     // <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
     //   <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">

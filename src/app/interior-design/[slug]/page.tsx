@@ -9,22 +9,22 @@ export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const projects = [
-    {slug: 'construction-company'},
-    {slug: 'design-and-build'},
-    {slug: 'bathroom'},
-    {slug: 'dream-kitchen'},
+    {slug: 'lighting-design'},
+    {slug: 'bedroom'},
+    {slug: 'interior-architecture'},
+    {slug: 'commercial-interior-design'},
   ];
   return projects.map(el => ({
     slug: el.slug,
   }))
 }
 
-interface KitchenPageContent {
+interface LoadPageContent {
   title: string;
   subtitle: string;
   bgImage: string;
-  kitchenAbout: string;
-  kitchenDescriptions: {
+  serviceAbout: string;
+  serviceDescriptions: {
     leftImg: string;
     rightImg: string;
     tablet: {
@@ -32,12 +32,12 @@ interface KitchenPageContent {
       rows: Array<{ one: string; two: string }>;
     };
   };
-  kitchenTarget: {
+  serviceTarget: {
     desc: string;
     image: string;
     imageFull: string;
   };
-  kitchenCollections: {
+  serviceCollections: {
     title: string;
     desc: string;
     fileTitle: string;
@@ -49,8 +49,8 @@ interface KitchenPageContent {
 async function Page({params}: {params: Promise<{slug: string}>}) {
   const {slug} = await params;
   const pageSlug = slug as PageDataKey;
-  const pageContent = pagesData[pageSlug] as KitchenPageContent;
-  const {tabletTitle, rows} = pageContent.kitchenDescriptions.tablet;
+  const pageContent = pagesData[pageSlug] as LoadPageContent;
+  const {tabletTitle, rows} = pageContent.serviceDescriptions.tablet;
 
   const basePath = process.env.NODE_ENV === "production" ? "ideal-house" : "";
 
@@ -63,12 +63,12 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
         </div>
       </section>
       <section className="container">
-        <p className='max-w-lg mx-auto in-brackets'>{pageContent.kitchenAbout}</p>
+        <p className='max-w-lg mx-auto in-brackets'>{pageContent.serviceAbout}</p>
       </section>
       <section className="flex max-md:flex-col justify-between gap-10">
         <div className="max-h-[1000px] md:w-1/3 mt-10 aspect-4/5 overflow-hidden">
           <Image 
-            src={`${basePath}${pageContent.kitchenDescriptions.leftImg}`} 
+            src={`${basePath}${pageContent.serviceDescriptions.leftImg}`} 
             width="498"
             height="622"
             alt=""
@@ -78,7 +78,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
         <div className="container w-full md:w-2/3 mr-4">
           <div className="aspect-4/5 overflow-hidden max-w-[600px] ml-auto mb-32 mr-40">
             <Image 
-              src={`${basePath}${pageContent?.kitchenDescriptions.rightImg}`}
+              src={`${basePath}${pageContent?.serviceDescriptions.rightImg}`}
               width="500"
               height="500"
               alt=""
@@ -106,10 +106,10 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
         </div>
       </section>
       <section className="flex flex-col md:flex-row justify-start md:justify-end items-end gap-10 md:gap-20 ml-4">
-        <p className="max-w-full md:max-w-60 h-fit in-brackets">{pageContent.kitchenTarget.desc}</p>
+        <p className="max-w-full md:max-w-60 h-fit in-brackets">{pageContent.serviceTarget.desc}</p>
         <div className=" md:w-2/3 aspect-10/6 overflow-hidden">
           <Image 
-            src={`${basePath}${pageContent.kitchenTarget.image}`} 
+            src={`${basePath}${pageContent.serviceTarget.image}`} 
             width="498"
             height="622"
             alt=""
@@ -120,7 +120,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
       <section>
         <div className="w-full aspect-[16/9]">
           <Image 
-            src={`${basePath}${pageContent.kitchenTarget.imageFull}`}
+            src={`${basePath}${pageContent.serviceTarget.imageFull}`}
             width="498"
             height="622"
             alt=""
@@ -130,12 +130,12 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
       </section>
       <section className='container flex max-md:flex-col justify-between gap-10'>
         <div className="max-w-160">
-          <h3 className="uppercase text-6xl max-md:text-4xl mb-14">{pageContent.kitchenCollections.title}</h3>
-          <p className="max-w-xl in-brackets">{pageContent.kitchenCollections.desc}</p>
+          <h3 className="uppercase text-6xl max-md:text-4xl mb-14">{pageContent.serviceCollections.title}</h3>
+          <p className="max-w-xl in-brackets">{pageContent.serviceCollections.desc}</p>
         </div>
         <div>
           <div>
-            <Link href={pageContent?.kitchenCollections?.fileLink || '#'} className='underline text-xl collections-link download-icon'>{pageContent.kitchenCollections.fileTitle}</Link>
+            <Link href={pageContent?.serviceCollections?.fileLink || '#'} className='underline text-xl collections-link download-icon'>{pageContent.serviceCollections.fileTitle}</Link>
           </div>
         </div>
       </section>

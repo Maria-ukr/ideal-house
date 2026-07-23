@@ -23,8 +23,8 @@ const navLinks = [
         path: "/interior-design/lighting-design",
       },
       {
-        title: "Residential Interior Design",
-        path: "/interior-design/residential-interior-design",
+        title: "Bedroom",
+        path: "/interior-design/bedroom",
       },
       {
         title: "Commercial Interior Design",
