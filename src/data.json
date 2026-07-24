@@ -442,7 +442,10 @@
   "contact": {
     "link": "/contact",
     "title": "Let's Connect",
-    "subtitle": "Reach out to our professional team to discuss your next design concept, upcoming architectural planning, or luxury home renovation project.",
+    "address": "Head Office 1: Videnska St.",
+    "office": "Ukraine, Kyiv, 4 Videnska St.",
+    "phone": "+1-111-111-1111",
+    "email": "info@idealhouse.gmail.com",
     "bgImage": "/images/contact-bg.jpg"
   }
 }
