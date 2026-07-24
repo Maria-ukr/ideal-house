@@ -38,7 +38,7 @@ function ProjectItem({el, index}: ProjectItemProps) {
         onMouseLeave={() => setIsHovered(false)}
         onMouseMove={handleMouseMove}
         ref={linkRef}
-        className="py-10 flex justify-between items-center uppercase text-6xl h4 opacity-50 hover:opacity-100 relative transition duration-300">
+        className="py-10 flex justify-between items-center uppercase text-6xl lg:text-3xl md:text-xl h4 opacity-50 hover:opacity-100 relative transition duration-300">
         <Image 
           src={`${basePath}${el.image}`} 
           width="100"
@@ -47,8 +47,8 @@ function ProjectItem({el, index}: ProjectItemProps) {
           className={clsx("absolute top-auto left-0 bottom-auto visible opacity-1 object-center object-cover aspect-3/5 z-1 -translate-x-1/2 -translate-y-1/2 transition duration-300 pointer-events-none", isHovered ? 'opacity-100' : 'opacity-0')}
           style={{left:`${coords.x}px`, top:`${coords.y}px`}}
         />
-        <p className="z-2">{el.title}</p>
-        <span className="z-2">{`/ ${(index+1) > 9 ? '' : 0}${index+1}`}</span>
+        <p className="z-2 break-all">{el.title}</p>
+        <span className="z-2 shrink">{`/ ${(index+1) > 9 ? '' : 0}${index+1}`}</span>
       </a>
     </li>
   )

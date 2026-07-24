@@ -2,14 +2,14 @@
   "home": {
     "title": "Discover how company brings contemporary refinement into every room of your home",
     "subtitle": "We see your entire home as an ecosystem where everything is connected and flows into each other in a harmony of perfect movements. Taking this approach, we create unique solutions through a wide variety of compositions, materials and take care to customize every detail to make your home as unique as you are.",
-    "bgImage": "/images/home-bg.jpg"
+    "bgImage": "images/home-bg.jpg"
   },
   "interior-design": {
     "link": "/interior-design",
     "title": "Interior Design",
     "category": "Design",
     "subtitle": "Transforming spaces through comprehensive luxury design, striking visual balance, and meticulously tailored solutions.",
-    "bgImage": "images/interior-design/interior-design-bg.jpg"
+    "bgImage": "/images/interior-design/interior-design-bg.jpg"
   },
   "interior-architecture": {
     "link": "/interior-design/interior-architecture",

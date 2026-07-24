@@ -56,7 +56,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
 
   return (
         <main className="pb-20 flex flex-col gap-20 md:gap-40 w-full min-h-full">
-      <section className="flex flex-1 min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat darken-bg" style={{backgroundImage: `url(${basePath}${pageContent.bgImage})`}}>
+      <section className="flex flex-1 min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat darken-bg" style={{backgroundImage: `url(${basePath}/${pageContent.bgImage})`}}>
         <div className="container w-full md:w-3/4 lg:w-1/2 z-2">
           <h1 className='mb-8 uppercase text-6xl max-md:text-4xl tracking-tight text-center'>{pageContent.title}</h1>
           <p className='text-sm leading-4 text-center in-brackets'>{pageContent.subtitle}</p>
@@ -140,7 +140,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
         </div>
       </section>
       <section className='container'>
-        <ul className="ml-auto max-w-5/6 projects-types__list">
+        <ul className="ml-auto w-full md:max-w-5/6 projects-types__list">
           {pageContent?.projects && pageContent?.projects?.map((el, i) => (
             <ProjectItem key={i+1} el={el} index={i} />
           ))}
