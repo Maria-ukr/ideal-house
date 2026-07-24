@@ -3,7 +3,7 @@ import Link from 'next/link';
 import ProjectItem from '@/src/components/ProjectItem/ProjectItem';
 
 import pagesData from "@/src/data.json";
-import { CONSTANTS } from '@/src/CONSTANTS';
+import { CONSTANTS } from '@/src/constants';
 
 type PageDataKey = keyof typeof pagesData;
 

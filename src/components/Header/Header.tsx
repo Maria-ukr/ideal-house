@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink, NavigationMenuPositioner } from '../ui/navigation-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '../ui/sheet';
 
-import { CONSTANTS } from '@/src/CONSTANTS';
+import { CONSTANTS } from '@/src/constants';
 
 const navLinks = [
   {

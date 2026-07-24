@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import pagesData from "@/src/data.json";
-import { CONSTANTS } from '@/src/CONSTANTS';
+import { CONSTANTS } from '@/src/constants';
 
 interface PageItem {
   key: string;

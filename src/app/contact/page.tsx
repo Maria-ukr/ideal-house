@@ -4,7 +4,7 @@ import Footer from '@/src/components/Footer/Footer';
 import Header from '@/src/components/Header/Header';
 
 import pagesData from "@/src/data.json";
-import { CONSTANTS } from '@/src/CONSTANTS';
+import { CONSTANTS } from '@/src/constants';
 
 interface PageContent {
   title: string;
@@ -22,10 +22,10 @@ function Page() {
     <>
       <Header />
       <main className='relative min-h-screen flex flex-col justify-center m-0 bg-cover bg-center bg-no-repeat darken-bg' style={{backgroundImage: `url(${BASE_URL}${pageContent.bgImage})`}}>
-        <div className='container mt-20 flex gap-20 relative z-2'>
+        <div className='container mt-20 flex max-lg:flex-col gap-20 relative z-2'>
           <div className='flex-1'>
-            <h1 className='text-5xl uppercase mb-6'>{pageContent.title}</h1>
-            <div className='flex gap-8'>
+            <h1 className='text-5xl uppercase mb-6  max-lg:text-center'>{pageContent.title}</h1>
+            <div className='flex gap-8 max-lg:justify-center max-md:flex-col max-md:items-center'>
               <div className='flex flex-col gap-2'>
                 <p>{pageContent.address}</p>
                 <p>{pageContent.office}</p>
@@ -42,7 +42,7 @@ function Page() {
                 <label className="uppercase absolute">name</label>
                 <input type="text" name="name" className="border-b-1 border-accent w-full" />
               </div>
-              <div className='flex justify-between gap-8 w-full'>
+              <div className='flex justify-between gap-8 w-full max-md:flex-col'>
                 <div className="uppercase relative w-full">
                   <label className="uppercase absolute">email</label>
                   <input type="text" name="email" className="border-b-1 border-accent w-full" />
@@ -56,7 +56,7 @@ function Page() {
                 <label className="uppercase absolute">message</label>
                 <input type="text" name="message" className="border-b-1 border-accent w-full" />
               </div>
-              <button type="submit" className="uppercase text-accent">send form</button>
+              <button type="submit" className="uppercase text-accent max-lg:mx-auto">send form</button>
             </Form>
           </div>
         </div>

@@ -2,7 +2,7 @@ import Header from '@/src/components/Header/Header';
 import Footer from '@/src/components/Footer/Footer';
 import ServicesSlider from '@/src/components/ServicesSlider/ServicesSlider';
 
-import { CONSTANTS } from '@/src/CONSTANTS';
+import { CONSTANTS } from '@/src/constants';
 import pagesData from "@/src/data.json";
 
 interface PageContent {

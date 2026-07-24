@@ -2,7 +2,7 @@ import pagesData from "@/src/data.json";
 import Image from 'next/image';
 import Link from 'next/link';
 import ProjectItem from '@/src/components/ProjectItem/ProjectItem';
-import { CONSTANTS } from '@/src/CONSTANTS';
+import { CONSTANTS } from '@/src/constants';
 
 type PageDataKey = keyof typeof pagesData;
 
@@ -56,7 +56,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
 
   return (
         <main className="pb-20 flex flex-col gap-20 md:gap-40 w-full min-h-full">
-      <section className="flex flex-1 min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat darken-bg" style={{backgroundImage: `url(${BASE_URL}/${pageContent.bgImage})`}}>
+      <section className="flex flex-1 min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat darken-bg" style={{backgroundImage: `url(${BASE_URL}${pageContent.bgImage})`}}>
         <div className="container w-full md:w-3/4 lg:w-1/2 relative z-2">
           <h1 className='mb-8 uppercase text-6xl max-md:text-4xl tracking-tight text-center'>{pageContent.title}</h1>
           <p className='text-sm leading-4 text-center in-brackets'>{pageContent.subtitle}</p>

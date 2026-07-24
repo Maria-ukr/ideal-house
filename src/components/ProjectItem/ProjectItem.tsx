@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import {clsx} from 'clsx';
 import Image from 'next/image';
 
-import { CONSTANTS } from '@/src/CONSTANTS';
+import { CONSTANTS } from '@/src/constants';
 
 interface Project {
   title: string;
