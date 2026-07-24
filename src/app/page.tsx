@@ -4,15 +4,9 @@ import ServicesSlider from '@/src/components/ServicesSlider/ServicesSlider';
 
 import { CONSTANTS } from '@/src/constants';
 import pagesData from "@/src/data.json";
+import { PageHomeContent } from "@/src/types/index";
 
-interface PageContent {
-  title: string;
-  subtitle: string;
-  bgImage: string;
-  link: string;
-}
-
-const pageContent = pagesData['home'] as PageContent;
+const pageContent = pagesData['home'] as PageHomeContent;
 
 export default function Home() {
   const {BASE_URL} = CONSTANTS;

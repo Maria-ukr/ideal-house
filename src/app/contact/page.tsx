@@ -5,15 +5,7 @@ import Header from '@/src/components/Header/Header';
 
 import pagesData from "@/src/data.json";
 import { CONSTANTS } from '@/src/constants';
-
-interface PageContent {
-  title: string;
-  address: string;
-  office: string;
-  phone: string;
-  email: string;
-  bgImage: string;
-}
+import { PageContent } from "@/src/types/index";
 
 function Page() {
   const pageContent = pagesData['contact'] as PageContent;
