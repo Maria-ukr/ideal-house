@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import pagesData from "@/src/data.json";
+import { CONSTANTS } from '@/src/CONSTANTS';
 
 interface PageItem {
   key: string;
@@ -29,8 +30,6 @@ const pageList: PageItem[] = Object.entries(pagesData as Record<string, Partial<
   link: page.link ?? '/',
 }));
 
-const basePath = process.env.NODE_ENV === "production" ? "/ideal-house" : "";
-
 interface PageItem {
   key: string;
   title: string;
@@ -40,6 +39,7 @@ interface PageItem {
 }
 
 function ServicesSlider() {
+  const {BASE_URL} = CONSTANTS;
   const [activeTitle, setActiveTitle] = useState(pageList[0]?.title || "");
 
   const slides = useMemo(() => {
@@ -85,7 +85,7 @@ function ServicesSlider() {
                 </p>
                 <div className="relative h-[75vh] w-[280px] sm:w-[350px] md:w-[420px] overflow-hidden shadow-2xl">
                   <img
-                    src={`${basePath}${slide.bgImage}`}
+                    src={`${BASE_URL}${slide.bgImage}`}
                     alt={slide.title}
                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   />

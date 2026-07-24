@@ -1,7 +1,9 @@
-import pagesData from "@/src/data.json";
 import Image from 'next/image';
 import Link from 'next/link';
 import ProjectItem from '@/src/components/ProjectItem/ProjectItem';
+
+import pagesData from "@/src/data.json";
+import { CONSTANTS } from '@/src/CONSTANTS';
 
 type PageDataKey = keyof typeof pagesData;
 
@@ -47,16 +49,15 @@ interface LoadPageContent {
 }
 
 async function Page({params}: {params: Promise<{slug: string}>}) {
+  const {BASE_URL} = CONSTANTS;
   const {slug} = await params;
   const pageSlug = slug as PageDataKey;
   const pageContent = pagesData[pageSlug] as LoadPageContent;
   const {tabletTitle, rows} = pageContent.serviceDescriptions.tablet;
 
-  const basePath = process.env.NODE_ENV === "production" ? "ideal-house" : "";
-
   return (
         <main className="pb-20 flex flex-col gap-20 md:gap-40 w-full min-h-full">
-      <section className="flex flex-1 min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat darken-bg" style={{backgroundImage: `url(${basePath}/${pageContent.bgImage})`}}>
+      <section className="flex flex-1 min-h-screen w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat darken-bg" style={{backgroundImage: `url(${BASE_URL}${pageContent.bgImage})`}}>
         <div className="container w-full md:w-3/4 lg:w-1/2 z-2">
           <h1 className='mb-8 uppercase text-6xl max-md:text-4xl tracking-tight text-center'>{pageContent.title}</h1>
           <p className='text-sm leading-4 text-center in-brackets'>{pageContent.subtitle}</p>
@@ -68,7 +69,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
       <section className="flex max-md:flex-col justify-between gap-10">
         <div className="max-h-[1000px] md:w-1/3 mt-10 aspect-4/5 overflow-hidden">
           <Image 
-            src={`${basePath}${pageContent.serviceDescriptions.leftImg}`} 
+            src={`${BASE_URL}${pageContent.serviceDescriptions.leftImg}`} 
             width="498"
             height="622"
             alt=""
@@ -78,7 +79,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
         <div className="container w-full md:w-2/3 mr-4">
           <div className="aspect-4/5 overflow-hidden max-w-[600px] ml-auto mb-32 mr-40">
             <Image 
-              src={`${basePath}${pageContent?.serviceDescriptions.rightImg}`}
+              src={`${BASE_URL}${pageContent?.serviceDescriptions.rightImg}`}
               width="500"
               height="500"
               alt=""
@@ -109,7 +110,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
         <p className="max-w-full md:max-w-60 h-fit in-brackets">{pageContent.serviceTarget.desc}</p>
         <div className=" md:w-2/3 aspect-10/6 overflow-hidden">
           <Image 
-            src={`${basePath}${pageContent.serviceTarget.image}`} 
+            src={`${BASE_URL}${pageContent.serviceTarget.image}`} 
             width="498"
             height="622"
             alt=""
@@ -120,7 +121,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
       <section>
         <div className="w-full aspect-[16/9]">
           <Image 
-            src={`${basePath}${pageContent.serviceTarget.imageFull}`}
+            src={`${BASE_URL}${pageContent.serviceTarget.imageFull}`}
             width="498"
             height="622"
             alt=""

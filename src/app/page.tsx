@@ -2,6 +2,7 @@ import Header from '@/src/components/Header/Header';
 import Footer from '@/src/components/Footer/Footer';
 import ServicesSlider from '@/src/components/ServicesSlider/ServicesSlider';
 
+import { CONSTANTS } from '@/src/CONSTANTS';
 import pagesData from "@/src/data.json";
 
 interface PageContent {
@@ -13,14 +14,13 @@ interface PageContent {
 
 const pageContent = pagesData['home'] as PageContent;
 
-const basePath = process.env.NODE_ENV === "production" ? "/" : "";
-
 export default function Home() {
+  const {BASE_URL} = CONSTANTS;
   return (
     <>
       <Header />
       <main className="flex flex-col w-full min-h-full m-0">
-        <section className="flex flex-1 min-h-dvh w-full flex-col items-center justify-center home-page__hero relative" style={{backgroundImage:`url(${basePath}/${pageContent?.bgImage})`}}>
+        <section className="flex flex-1 min-h-dvh w-full flex-col items-center justify-center home-page__hero relative" style={{backgroundImage:`url(${BASE_URL}${pageContent?.bgImage})`}}>
           <div className="container w-full md:w-3/4 lg:w-1/2">
             <h1 className='mb-4 uppercase text-3xl max-md:text-xl max-md:leading-5 leading-7 tracking-tight text-center'>{pageContent?.title}</h1>
             <p className='text-sm leading-4 text-center in-brackets'>{pageContent?.subtitle}</p>

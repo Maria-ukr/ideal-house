@@ -2,7 +2,9 @@ import Form from 'next/form';
 import Link from 'next/link';
 import Footer from '@/src/components/Footer/Footer';
 import Header from '@/src/components/Header/Header';
+
 import pagesData from "@/src/data.json";
+import { CONSTANTS } from '@/src/CONSTANTS';
 
 interface PageContent {
   title: string;
@@ -15,11 +17,11 @@ interface PageContent {
 
 function Page() {
   const pageContent = pagesData['contact'] as PageContent;
-  const basePath = process.env.NODE_ENV === "production" ? "/" : "";
+    const {BASE_URL} = CONSTANTS;
   return (
     <>
       <Header />
-      <main className='relative min-h-screen flex flex-col justify-center m-0 bg-cover bg-center bg-no-repeat darken-bg' style={{backgroundImage: `url(${basePath}${pageContent.bgImage})`}}>
+      <main className='relative min-h-screen flex flex-col justify-center m-0 bg-cover bg-center bg-no-repeat darken-bg' style={{backgroundImage: `url(${BASE_URL}${pageContent.bgImage})`}}>
         <div className='container mt-20 flex gap-20 relative z-2'>
           <div className='flex-1'>
             <h1 className='text-5xl uppercase mb-6'>{pageContent.title}</h1>

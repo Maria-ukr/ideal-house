@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink, NavigationMenuPositioner } from '../ui/navigation-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '../ui/sheet';
 
+import { CONSTANTS } from '@/src/CONSTANTS';
+
 const navLinks = [
   {
     title: "Home",
@@ -69,8 +71,7 @@ const navLinks = [
 ]
 
 const Header = () => {
-
-  const basePath = process.env.NODE_ENV === "production" ? "/ideal-house" : "";
+  const {BASE_URL} = CONSTANTS;
   const [navOpen, setNavOpen] = useState(false);
 
   return (
@@ -79,7 +80,7 @@ const Header = () => {
         <Link href="/">
           <Image 
           className="mr-auto py-1"
-          src={`${basePath}/images/logo-light.svg`}
+          src={`${BASE_URL}/images/logo-light.svg`}
           alt="Logo"
           loading="eager"
           width={70}

@@ -3,6 +3,8 @@ import { useState, useRef } from 'react';
 import {clsx} from 'clsx';
 import Image from 'next/image';
 
+import { CONSTANTS } from '@/src/CONSTANTS';
+
 interface Project {
   title: string;
   image: string;
@@ -16,7 +18,7 @@ interface ProjectItemProps {
 
 function ProjectItem({el, index}: ProjectItemProps) {
   
-  const basePath = process.env.NODE_ENV === "production" ? "/ideal-house" : "";
+  const {BASE_URL} = CONSTANTS;
   const [coords, setCoords] = useState({x: 0, y: 0});
   const [isHovered, setIsHovered] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -40,7 +42,7 @@ function ProjectItem({el, index}: ProjectItemProps) {
         ref={linkRef}
         className="py-10 flex justify-between items-center uppercase text-6xl lg:text-3xl md:text-xl h4 opacity-50 hover:opacity-100 relative transition duration-300">
         <Image 
-          src={`${basePath}${el.image}`} 
+          src={`${BASE_URL}${el.image}`} 
           width="100"
           height="150"
           alt={el.title}
