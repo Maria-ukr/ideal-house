@@ -87,7 +87,7 @@ function ServicesSlider() {
                   <img
                     src={`${BASE_URL}${slide.bgImage}`}
                     alt={slide.title}
-                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105 opacity-70"
                   />
                 </div>
                 <p className="absolute -right-12 top-[10%] -translate-y-1/2 rotate-90 text-[10px] tracking-wide opacity-90 whitespace-nowrap">
