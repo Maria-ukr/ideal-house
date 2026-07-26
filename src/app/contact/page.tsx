@@ -29,26 +29,26 @@ function Page() {
             </div>
           </div>
           <div className='flex-1'>
-            <Form action="#" className='flex flex-col items-start gap-8'>
-              <div className="uppercase relative w-full">
-                <label className="uppercase absolute">name</label>
-                <input type="text" name="name" className="border-b-1 border-accent w-full" />
+            <Form action="#" className='flex flex-col items-start gap-8 contact-page__form'>
+              <div className="uppercase relative w-full leading-none">
+                <input type="text" name="name" placeholder=" " className="border-b-1 border-accent w-full focus:outline-0" />
+                <label className="uppercase absolute left-0 top-0">name</label>
               </div>
               <div className='flex justify-between gap-8 w-full max-md:flex-col'>
                 <div className="uppercase relative w-full">
-                  <label className="uppercase absolute">email</label>
-                  <input type="text" name="email" className="border-b-1 border-accent w-full" />
+                  <input type="text" name="email" placeholder=" " className="border-b-1 border-accent w-full focus:outline-0" />
+                  <label className="uppercase absolute left-0 top-0">email</label>
                 </div>
                 <div className="uppercase relative w-full">
-                  <label className="uppercase absolute">phone</label>
-                  <input type="text" name="phone" className="border-b-1 border-accent w-full" />
+                  <input type="text" name="phone" placeholder=" " className="border-b-1 border-accent w-full focus:outline-0" />
+                  <label className="uppercase absolute left-0 top-0">phone</label>
                 </div>
               </div>
               <div className="uppercase relative w-full">
-                <label className="uppercase absolute">message</label>
-                <input type="text" name="message" className="border-b-1 border-accent w-full" />
+                <input type="text" name="message" placeholder=" " className="border-b-1 border-accent w-full focus:outline-0" />
+                <label className="uppercase absolute left-0 top-0">message</label>
               </div>
-              <button type="submit" className="uppercase text-accent max-lg:mx-auto">send form</button>
+              <button type="submit" className="uppercase text-accent max-lg:mx-auto accent-circle">send form</button>
             </Form>
           </div>
         </div>
