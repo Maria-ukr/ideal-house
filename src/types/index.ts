@@ -44,3 +44,10 @@ export interface PageContent {
   bgImage: string;
 }
 
+export interface PageContactContent {
+  title: string;
+  link: string;
+  subtitle: string;
+  bgImage: string;
+  gallery: Array<{image: string; title: string;}>;
+}

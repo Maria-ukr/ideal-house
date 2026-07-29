@@ -219,8 +219,29 @@
     "link": "/about",
     "title": "The Brand",
     "category": "About",
-    "subtitle": "Discover the story, principles, and unparalleled design craftsmanship that define Oraanj's elite standard in London property design.",
-    "bgImage": "/images/about-bg.jpg"
+    "subtitle": "Discover the story, principles, and unparalleled design",
+    "bgImage": "/images/about-bg.jpg",
+    "gallery": [
+    {
+      "image": "/images/about-bg.jpg",
+      "title": "ergonomic"
+    },
+    {
+      "image": "/images/renovation/dream-kitchen-bg.png",
+      "title": "luxury"
+    },
+    {
+      "image": "/images/renovation/renovation-bg.jpg",
+      "title": "harmonious"
+    },
+    {
+      "image": "/images/renovation/kitchen-right.jpg",
+      "title": "functional"
+    },
+    {
+      "image": "/images/renovation/enchantment.jpg",
+      "title": "timeless"
+    }]
   },
   "renovation": {
     "link": "/renovation",
