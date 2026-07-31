@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ProjectItem from '@/src/components/ProjectItem/ProjectItem';
+import { notFound } from 'next/navigation';
 
+import ProjectItem from '@/src/components/ProjectItem/ProjectItem';
 import pagesData from "@/src/data.json";
 import { CONSTANTS } from '@/src/constants';
 import { LoadPageContent } from "@/src/types/index";
@@ -26,7 +27,12 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
   const {BASE_URL} = CONSTANTS;
   const {slug} = await params;
   const pageSlug = slug as PageDataKey;
-  const pageContent = pagesData[pageSlug] as LoadPageContent;
+  const pageContent = (pagesData[pageSlug] as unknown) as LoadPageContent | undefined;
+
+  if (!pageContent) {
+    notFound();
+  };
+
   const {tabletTitle, rows} = pageContent.serviceDescriptions.tablet;
 
   return (
