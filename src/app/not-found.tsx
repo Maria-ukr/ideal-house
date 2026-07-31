@@ -1,6 +1,6 @@
-import { Button } from '../components/ui/button'
+import { Button } from '@/src/components/ui/button'
 import Link from 'next/link'
-import Header from '../components/Header/Header'
+import Header from '@/src/components/Header/Header'
 
 function NotFound() {
   return (
