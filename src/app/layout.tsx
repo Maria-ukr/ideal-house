@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   description: "Created project by https://github.com/Maria-ukr",
   verification: {
     google: "PD7KukjE2vEDEe9Rt3TqNxBtrVb_m-qeskwn545mor8",
-  }
+  },
 };
 
 export default function RootLayout({

@@ -4,12 +4,13 @@ export interface PageHomeContent {
   subtitle: string;
   bgImage: string;
   link: string;
+  bgVideo: string;
 }
 
 
 export interface LoadPageContent {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   bgImage: string;
   serviceAbout: string;
   serviceDescriptions: {
@@ -50,4 +51,21 @@ export interface PageContactContent {
   subtitle: string;
   bgImage: string;
   gallery: Array<{image: string; title: string;}>;
+}
+
+export interface Project {
+  title: string;
+  image: string;
+  link: string;
+}
+
+export interface ProjectItemProps {
+  el: Project;
+  index: number;
+}
+
+export interface VideoBgProps {
+  videoSrc: string;
+  classVideoBox?: string;
+  poster: string;
 }

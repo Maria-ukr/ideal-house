@@ -6,6 +6,7 @@ import { CONSTANTS } from '@/src/constants';
 import pagesData from "@/src/data.json";
 import { PageHomeContent } from "@/src/types/index";
 import AnimatedSection from '@/src/components/AnimatedSection/AnimatedSection';
+import VideoBg from '@/src/components/VideoBg/VideoBg';
 
 const pageContent = pagesData['home'] as PageHomeContent;
 
@@ -14,8 +15,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col w-full min-h-full m-0 h-screen overflow-y-auto snap-y snap-mandatory">
-        <section className="flex flex-1 min-h-dvh w-full flex-col items-center justify-center home-page__hero relative snap-start" style={{backgroundImage:`url(${BASE_URL}${pageContent?.bgImage})`}}>
+      <main className="flex flex-col w-full min-h-full relative m-0 h-screen overflow-y-auto snap-y snap-mandatory">
+        <VideoBg videoSrc={`${BASE_URL}${pageContent?.bgVideo}`} poster={`${BASE_URL}${pageContent?.bgImage}`} />
+        <section className="flex flex-1 min-h-dvh w-full flex-col items-center justify-center relative home-page__hero snap-start">
           <div className="container w-full md:w-3/4 lg:w-1/2">
             <h1 className='mb-4 uppercase text-3xl max-md:text-xl max-md:leading-5 leading-7 tracking-tight text-center'>{pageContent?.title}</h1>
             <p className='text-sm leading-4 text-center in-brackets'>{pageContent?.subtitle}</p>

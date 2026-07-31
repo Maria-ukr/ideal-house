@@ -4,17 +4,8 @@ import {clsx} from 'clsx';
 import Image from 'next/image';
 
 import { CONSTANTS } from '@/src/constants';
+import {ProjectItemProps} from '@/src/types/index';
 
-interface Project {
-  title: string;
-  image: string;
-  link: string;
-}
-
-interface ProjectItemProps {
-  el: Project;
-  index: number;
-}
 
 function ProjectItem({el, index}: ProjectItemProps) {
   

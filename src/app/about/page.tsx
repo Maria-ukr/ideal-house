@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { useRef } from "react";
+import { useRef, useState, useLayoutEffect } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Header from '@/src/components/Header/Header';
 import {PageContactContent} from '@/src/types/index';
@@ -20,20 +20,39 @@ const layoutStyles = [
 
 function Page() {
   const {BASE_URL} = CONSTANTS;
+
   const targetRef = useRef<HTMLDivElement | null>(null);
   const sloganRef = useRef<HTMLDivElement | null>(null);
+  const galleryRef = useRef<HTMLDivElement | null>(null);
+
+  const [scrollRange, setScrollRange] = useState(0);
+
+  useLayoutEffect(() => {
+    const calculateScroll = () => {
+      if(galleryRef.current) {
+        const totalGalleryWidth = galleryRef.current.scrollWidth;
+        const viewportWidth = window.innerWidth;
+        setScrollRange(totalGalleryWidth - viewportWidth);
+      }
+    };
+
+    calculateScroll();
+    window.addEventListener('resize', calculateScroll);
+    return () => window.removeEventListener('resize', calculateScroll);
+  }, [pageContent]);
+
   const {scrollYProgress} = useScroll({
     target: targetRef, 
     offset: ["start start", "end end"]
   });
-  const x = useTransform(scrollYProgress, [0,1], ["0%", "-70%"]);
+  const x = useTransform(scrollYProgress, [0,1], [0, -scrollRange]);
   const {scrollYProgress: sloganScrollYProgress} = useScroll({
     target: sloganRef,
     offset: ["start end", "end start"]
   });
 
-  const xLeft = useTransform(sloganScrollYProgress, [0, 1], ["0%", "-40%"]);
-  const xRight = useTransform(sloganScrollYProgress, [0, 1], ["-40%", "0%"]);
+  const xLeft = useTransform(sloganScrollYProgress, [0, 1], ["10%", "-250%"]);
+  const xRight = useTransform(sloganScrollYProgress, [0, 1], ["-200%", "250%"]);
 
   return (
     <>
@@ -64,7 +83,7 @@ function Page() {
         </section>
         <section ref={targetRef} className='relative h-[300vh]'>
           <div className='sticky top-16 flex h-[80vh] overflow-hidden'>
-            <motion.div style={{ x }} className="flex gap-16 md:gap-24 pl-12 pr-32 py-6">
+            <motion.div ref={galleryRef} style={{ x }} className="flex gap-16 md:gap-24 pl-12 pr-32 py-6 w-max">
               {pageContent?.gallery.map((el, i) => {
                 const style = layoutStyles[i % layoutStyles.length];
                 return (
@@ -74,7 +93,7 @@ function Page() {
                 >
                   <div className="relative h-full w-full rounded-sm bg-neutral-900">
                     <Image 
-                      src={el.image} 
+                      src={`${BASE_URL}${el.image}`} 
                       alt={el.title}
                       fill
                       className="object-cover" 
@@ -86,9 +105,9 @@ function Page() {
             </motion.div>
           </div>
         </section>
-        <section ref={sloganRef} className='w-fulloverflow-hidden py-24 whitespace-nowrap h-[300vh]'>
-          <motion.p style={{ x: xLeft }} className='whitespace-nowrap text-7xl font-bold uppercase tracking-wider font-montaga '>is the synthesis of emotions and functional innovative design.</motion.p>
-          <motion.p style={{ x: xRight }} className='whitespace-nowrap text-7xl font-bold uppercase tracking-wider font-montaga '>is the synthesis of emotions and functional innovative design.</motion.p>
+        <section ref={sloganRef} className='w-full overflow-hidden py-24 whitespace-nowrap'>
+          <motion.p style={{ x: xLeft }}className='whitespace-nowrap text-6xl uppercase tracking-wider font-montaga'>is the synthesis of emotions and functional innovative design.</motion.p>
+          <motion.p style={{ x: xRight }}className='whitespace-nowrap text-6xl uppercase tracking-wider font-montaga'>is the synthesis of emotions and functional innovative design.</motion.p>
         </section>
       </main>
     </>
