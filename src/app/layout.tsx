@@ -35,6 +35,9 @@ const ptfuturaFont = localFont({
 export const metadata: Metadata = {
   title: "Ideal house",
   description: "Created project by https://github.com/Maria-ukr",
+  verification: {
+    google: "PD7KukjE2vEDEe9Rt3TqNxBtrVb_m-qeskwn545mor8",
+  }
 };
 
 export default function RootLayout({
