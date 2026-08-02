@@ -222,6 +222,11 @@
     "category": "About",
     "subtitle": "Discover the story, principles, and unparalleled design",
     "bgImage": "/images/about-bg.jpg",
+    "slogan": ["is the synthesis of emotions and functional innovative design.", "is the synthesis of emotions and functional innovative design."],
+    "sloganDesc": "From the beginning our goal has been to design and manufacture products that take a wholistic approach to living spaces. This has resulted in collections and ongoing projects that bring a unified aesthetic into the different spaces of the home allowing to create undisrupted designs using our wide range of products and innovative systems. Always searching for ways to achieve refined elegance and to introduce cutting edge contemporary aesthetics that answer the individual needs of our clients. Clean minimalist lines and forms may be observed in all our designs since we seek to eliminate everything that creates clutter and unnecessary noise in the space in order to bring harmony and a sense of elevated luxury.",
+    "targetText": "Our commitment to reimagining and redefining the forms and aesthetics of contemporary life and questioning what is possible as well as what the future may bring has evolved into an ongoing philosophy and approach to everything we do. We are never too comfortable in any particular movement or idea but are rather searching for new ways to innovate in order to answer the new demands of the what is to come.",
+    "targetImage": "/images/renovation/dream-kitchen-bg.png",
+    "targetSubtext": "All of our designs and products are exclusively made in Canada at our state-of-the-art factory using the finest materials and components that we source throughout the world. This allows us to oversee the entire production process and to have strict quality control procedures in order to ensure that every component and every detail is executed to perfection. At our factory you find a combination of the finest new cutting-edge technology and processes alongside years of experience, craftsmanship and passion geared towards constant improvement and delivering results that exceed our clients expectations.",
     "gallery": [
     {
       "image": "/images/about-bg.jpg",
@@ -242,7 +247,12 @@
     {
       "image": "/images/renovation/enchantment.jpg",
       "title": "timeless"
-    }]
+    }],
+    "footerBg": "/images/renovation/kitchen-right.jpg",
+    "footerText": "Discover the Difference",
+    "footerTitle": "Join Our Team",
+    "footerButtonText": "see careers",
+    "footerButtonLink": "/careers"
   },
   "renovation": {
     "link": "/renovation",

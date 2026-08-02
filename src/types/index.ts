@@ -51,6 +51,16 @@ export interface PageContactContent {
   subtitle: string;
   bgImage: string;
   gallery: Array<{image: string; title: string;}>;
+  slogan: Array<string>;
+  sloganDesc: string;
+  targetText: string;
+  targetImage: string;
+  targetSubtext: string;
+  footerBg: string;
+  footerText: string;
+  footerTitle: string;
+  footerButtonText: string;
+  footerButtonLink: string;
 }
 
 export interface Project {

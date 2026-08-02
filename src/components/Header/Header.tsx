@@ -77,14 +77,15 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 z-90 w-full bg-foreground/90 backdrop-blur-md">
       <div className="container flex items-center justify-between mx-auto text-background">
-        <Link href="/">
-          <Image 
+        <Link href="/" className="mr-auto py-1 text-xl tracking-tight font-montaga">
+          IdealHouse
+          {/* <Image 
           className="mr-auto py-1"
           src={`${BASE_URL}/images/logo-light.svg`}
           alt="Logo"
           loading="eager"
           width={70}
-          height={70} />
+          height={70} /> */}
         </Link>
         <nav className="flex items-center justify-between">
         <NavigationMenu className="hidden md:flex">
