@@ -1,11 +1,10 @@
 "use client";
+
 import Link from "next/link";
 import { Fragment, useState } from 'react';
-import Image from 'next/image';
+import {motion, useScroll, useMotionValueEvent} from 'motion/react';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink, NavigationMenuPositioner } from '../ui/navigation-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '../ui/sheet';
-
-import { CONSTANTS } from '@/src/constants';
 
 const navLinks = [
   {
@@ -71,21 +70,32 @@ const navLinks = [
 ]
 
 const Header = () => {
-  const {BASE_URL} = CONSTANTS;
+  const {scrollY} = useScroll();
+
   const [navOpen, setNavOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  
+  useMotionValueEvent(scrollY, 'change', (current: number) => {
+      const previous = scrollY.getPrevious() ?? 0;
+      const isScrollingDown = current > previous && current > 150;
+      setHidden((prevHidden) => {
+        if (prevHidden !== isScrollingDown) {
+          return isScrollingDown;
+        }
+        return prevHidden;
+      });
+  })
 
   return (
-    <header className="fixed top-0 left-0 z-90 w-full bg-foreground/90 backdrop-blur-md">
+    <motion.header variants={{
+        visible: { y: 0 },
+        hidden: { y: '-100%' },
+      }}
+      animate={hidden ? 'hidden' : 'visible'}
+      transition={{ duration: 0.35, ease: 'easeInOut' }} className="fixed top-0 left-0 z-90 w-full bg-foreground/90 backdrop-blur-md">
       <div className="container flex items-center justify-between mx-auto text-background">
         <Link href="/" className="mr-auto py-1 text-xl tracking-tight font-montaga">
           IdealHouse
-          {/* <Image 
-          className="mr-auto py-1"
-          src={`${BASE_URL}/images/logo-light.svg`}
-          alt="Logo"
-          loading="eager"
-          width={70}
-          height={70} /> */}
         </Link>
         <nav className="flex items-center justify-between">
         <NavigationMenu className="hidden md:flex">
@@ -151,7 +161,7 @@ const Header = () => {
         </div>
         </nav>
       </div>
-    </header>
+    </motion.header>
   )
 }
 
