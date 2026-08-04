@@ -4,15 +4,33 @@ import { useEffect, useSyncExternalStore } from 'react';
 import { motion, useMotionValue, useSpring } from 'motion/react';
 
 const emptySubscribe = () => () => {};
-const useIsClient = () => 
+
+const useIsClient = () =>
   useSyncExternalStore(
     emptySubscribe,
     () => true,
     () => false
   );
 
+const subscribePointer = (callback: () => void) => {
+  const mediaQuery = window.matchMedia('(pointer: fine)');
+  mediaQuery.addEventListener('change', callback);
+  return () => mediaQuery.removeEventListener('change', callback);
+};
+
+const getPointerSnapshot = () => window.matchMedia('(pointer: fine)').matches;
+
+const useHasPointer = () =>
+  useSyncExternalStore(
+    subscribePointer,
+    getPointerSnapshot,
+    () => false
+  );
+
 function CustomCursor() {
   const isClient = useIsClient();
+  const hasPointer = useHasPointer();
+
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
@@ -20,30 +38,35 @@ function CustomCursor() {
     damping: 25,
     stiffness: 350,
     mass: 0.5,
-  }
+  };
 
   const smoothX = useSpring(cursorX, springConfig);
   const smoothY = useSpring(cursorY, springConfig);
 
   useEffect(() => {
+    if (!hasPointer) return;
+
     const updateMousePosition = (e: MouseEvent) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
     };
+
     window.addEventListener('mousemove', updateMousePosition);
     return () => window.removeEventListener('mousemove', updateMousePosition);
-  }, [cursorX, cursorY]);
+  }, [cursorX, cursorY, hasPointer]);
 
-  if(!isClient) return null;
+  if (!isClient || !hasPointer) return null;
 
   return (
-    <motion.div className="pointer-events-none fixed top-0 left-0 z-990 -translate-x-1/2 -translate-y-1/2 mix-blend-difference custom-cursor" style={{x: smoothX, y: smoothY}}>
+    <motion.div
+      className="pointer-events-none fixed top-0 left-0 z-990 -translate-x-1/2 -translate-y-1/2 mix-blend-difference custom-cursor"
+      style={{ x: smoothX, y: smoothY }}
+    >
       <div className="flex justify-center items-center rounded-full border border-white/50 w-6 h-6 custom-cursor__inner">
         <div className="rounded-full bg-accent w-1 h-1 custom-cursor__inner-dot" />
       </div>
     </motion.div>
-  )
-
+  );
 }
 
 export default CustomCursor;
