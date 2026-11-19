@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRef, useState, useLayoutEffect } from "react";
-import { motion, useScroll, useTransform } from "motion/react";
+import { useRef, useState, useLayoutEffect, useEffect } from "react";
+import { motion, useAnimationControls, useInView, useScroll, useTransform } from "motion/react";
 import Header from '@/src/components/Header/Header';
 import Footer from '@/src/components/Footer/Footer';
 import {PageContactContent} from '@/src/types/index';
@@ -28,6 +28,7 @@ function Page() {
   const galleryRef = useRef<HTMLDivElement | null>(null);
 
   const [scrollRange, setScrollRange] = useState(0);
+  const [isCompactViewport, setIsCompactViewport] = useState(false);
 
   useLayoutEffect(() => {
     const calculateScroll = () => {
@@ -53,8 +54,52 @@ function Page() {
     offset: ["start end", "end start"]
   });
 
-  const xLeft = useTransform(sloganScrollYProgress, [0, 1], ["10%", "-250%"]);
-  const xRight = useTransform(sloganScrollYProgress, [0, 1], ["-200%", "250%"]);
+  const sloganInView = useInView(sloganRef, { amount: 0 });
+  const firstSloganControls = useAnimationControls();
+  const secondSloganControls = useAnimationControls();
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1199px)");
+    const updateViewport = () => setIsCompactViewport(mediaQuery.matches);
+
+    updateViewport();
+    mediaQuery.addEventListener("change", updateViewport);
+    return () => mediaQuery.removeEventListener("change", updateViewport);
+  }, []);
+
+  useEffect(() => {
+    if (!isCompactViewport || !sloganInView) {
+      firstSloganControls.stop();
+      secondSloganControls.stop();
+      return;
+    }
+
+    const loopTransition = {
+      duration: 20,
+      ease: "linear" as const,
+      repeat: Infinity,
+      repeatType: "loop" as const,
+    };
+
+    firstSloganControls.start({ x: ["0%", "-50%"], transition: loopTransition });
+    secondSloganControls.start({ x: ["-50%", "0%"], transition: loopTransition });
+
+    return () => {
+      firstSloganControls.stop();
+      secondSloganControls.stop();
+    };
+  }, [isCompactViewport, sloganInView, firstSloganControls, secondSloganControls]);
+
+  const firstSloganX = useTransform(
+    sloganScrollYProgress,
+    [0, 1],
+    ["30vw", "-110%"]
+  );
+  const secondSloganX = useTransform(
+    sloganScrollYProgress,
+    [0, 1],
+    ["-110%", "35vw"]
+  );
 
   return (
     <>
@@ -108,13 +153,24 @@ function Page() {
             </motion.div>
           </div>
         </section>
-        <section ref={sloganRef} className='w-full overflow-hidden py-24 whitespace-nowrap'>
+        <section ref={sloganRef} className="w-full overflow-hidden py-24 select-none">
           {pageContent?.slogan.map((el, i) => {
-            if(i % 2 === 0) {
-              return (<motion.p key={i} style={{ x: xLeft }}className='whitespace-nowrap text-6xl uppercase tracking-wider font-montaga'>{el}</motion.p>)
-            } else {
-              return (<motion.p key={i} style={{ x: xRight }}className='whitespace-nowrap text-6xl uppercase tracking-wider font-montaga'>{el}</motion.p>)
-            }
+            const isFirstLine = i % 2 === 0;
+            const desktopX = isFirstLine ? firstSloganX : secondSloganX;
+            const mobileControls = isFirstLine ? firstSloganControls : secondSloganControls;
+
+            return (
+              <div key={i} className="overflow-hidden w-full my-2">
+                <motion.p
+                  animate={isCompactViewport ? mobileControls : undefined}
+                  style={isCompactViewport ? undefined : { x: desktopX }}
+                  className="flex w-max whitespace-nowrap text-6xl uppercase tracking-wider font-montaga"
+                >
+                  <span className="pr-12">{el}</span>
+                  <span className="pr-12">{el}</span>
+                </motion.p>
+              </div>
+            );
           })}
         </section>
         <section className='bg-background text-foreground dark:bg-foreground dark:text-background'>
