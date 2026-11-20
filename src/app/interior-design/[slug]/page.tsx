@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import ProjectItem from '@/src/components/ProjectItem/ProjectItem';
 import pagesData from "@/src/data.json";
 import { CONSTANTS } from '@/src/constants';
-import { LoadPageContent } from "@/src/types/index";
+import { LoadPageContent, PageHomeContent } from "@/src/types/index";
 
 type PageDataKey = keyof typeof pagesData;
 
