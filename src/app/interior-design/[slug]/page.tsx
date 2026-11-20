@@ -12,15 +12,11 @@ type PageDataKey = keyof typeof pagesData;
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const projects = [
-    {slug: 'lighting-design'},
-    {slug: 'bedroom'},
-    {slug: 'interior-architecture'},
-    {slug: 'commercial-interior-design'},
-  ];
-  return projects.map(el => ({
-    slug: el.slug,
-  }))
+  return Object.values(pagesData)
+    .filter((page) => page.link?.startsWith('/interior-design/'))
+    .map((page) => ({
+      slug: page.link.split('/').pop()!,
+    }));
 }
 
 async function Page({params}: {params: Promise<{slug: string}>}) {
