@@ -9,6 +9,7 @@ export interface PageHomeContent {
 
 
 export interface LoadPageContent {
+  link?: string;
   title: string;
   subtitle?: string;
   bgImage: string;

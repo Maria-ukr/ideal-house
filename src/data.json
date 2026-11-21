@@ -507,14 +507,14 @@
         "title": "MONOLITH",
         "subtitle": "Minimalist Villa",
         "slug": "monolith",
-        "heroImage": "/images/works/monolith-hero.jpg",
+        "heroImage": "/images/works/monolith-hero.webp",
         "introDescription": "Sculptural concrete volumes paired with smoked oak paneling and soft indirect architectural lighting across an open-concept floor plan.",
         "gallerySection": {
           "sideNote": "Floor-to-ceiling glazing merges the dark stone interior with the surrounding landscape while maintaining acoustic privacy.",
-          "detailImage": "/images/works/monolith-detail-stone.jpg",
-          "wideImage": "/images/works/monolith-wide-view.jpg"
+          "detailImage": "/images/works/monolith-detail-stone.webp",
+          "wideImage": "/images/works/monolith-wide-view.webp"
         },
-        "fullWidthImage": "/images/works/monolith-living-panorama.jpg",
+        "fullWidthImage": "/images/works/monolith-living-panorama.webp",
         "address": {
           "address": "15-3 Rue Daniel Stern, 75015 Paris, France",
           "longitude": "2.2921",
@@ -526,14 +526,14 @@
         "title": "OBSIDIAN",
         "subtitle": "Penthouse Suite",
         "slug": "obsidian",
-        "heroImage": "/images/works/obsidian-hero.jpg",
+        "heroImage": "/images/works/obsidian-hero.webp",
         "introDescription": "An elevated urban sanctuary featuring matte black metal accents, custom velvet seating, and warm bronze illumination.",
         "gallerySection": {
           "sideNote": "Every joinery line is concealed to highlight the natural veining of imported dark marble and brushed brass hardware.",
-          "detailImage": "/images/works/obsidian-detail-brass.jpg",
-          "wideImage": "/images/works/obsidian/wide-view.jpg"
+          "detailImage": "/images/works/obsidian-detail-brass.webp",
+          "wideImage": "/images/works/obsidian/wide-view.webp"
         },
-        "fullWidthImage": "/images/works/obsidian-living-panorama.jpg",
+        "fullWidthImage": "/images/works/obsidian-living-panorama.webp",
         "address": {
           "address": "Av. de la Motte-Picquet, 75015 Paris, France",
           "longitude": "2.2998",
@@ -545,14 +545,14 @@
         "title": "AURA",
         "subtitle": "Modern Loft",
         "slug": "aura",
-        "heroImage": "/images/works/aura-hero.jpg",
+        "heroImage": "/images/works/aura-hero.webp",
         "introDescription": "Warm walnut millwork and textured plaster walls soften the industrial proportions of this double-height city residence.",
         "gallerySection": {
           "sideNote": "Integrated linear LEDs accentuate the rhythm of custom wall-to-wall bookcases and curated sculptural objects.",
-          "detailImage": "/images/works/aura-detail-wood.jpg",
-          "wideImage": "/images/works/aura-wide-view.jpg"
+          "detailImage": "/images/works/aura-detail-wood.webp",
+          "wideImage": "/images/works/aura-wide-view.webp"
         },
-        "fullWidthImage": "/images/works/aura-living-panorama.jpg",
+        "fullWidthImage": "/images/works/aura-living-panorama.webp",
         "address": {
           "address": "6 Rue Tiphaine, 75015 Paris, France",
           "longitude": "2.2966",
@@ -564,14 +564,14 @@
         "title": "NOCTURNE",
         "subtitle": "Private Residence",
         "slug": "nocturne",
-        "heroImage": "/images/works/nocturne-hero.jpg",
+        "heroImage": "/images/works/nocturne-hero.webp",
         "introDescription": "Designed around shadow and warm highlights, combining smoked glass partitions with low-profile Italian lounge furniture.",
         "gallerySection": {
           "sideNote": "Subtle contrast between tactile boucle upholstery and polished dark stone establishes a calm, intimate evening ambiance.",
-          "detailImage": "/images/works/nocturne-detail-glass.jpg",
-          "wideImage": "/images/works/nocturne-wide-view.jpg"
+          "detailImage": "/images/works/nocturne-detail-glass.webp",
+          "wideImage": "/images/works/nocturne-wide-view.webp"
         },
-        "fullWidthImage": "/images/works/nocturne-living-panorama.jpg",
+        "fullWidthImage": "/images/works/nocturne-living-panorama.webp",
         "address": {
           "address": "25 Quai de Grenelle, 75015 Paris, France",
           "longitude": "2.2861",

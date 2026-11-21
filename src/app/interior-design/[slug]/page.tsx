@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import ProjectItem from '@/src/components/ProjectItem/ProjectItem';
 import pagesData from "@/src/data.json";
 import { CONSTANTS } from '@/src/constants';
-import { LoadPageContent, PageHomeContent } from "@/src/types/index";
+import { LoadPageContent } from "@/src/types/index";
 
 type PageDataKey = keyof typeof pagesData;
 
@@ -13,9 +13,9 @@ export const dynamicParams = false;
 
 export async function generateStaticParams() {
   return Object.values(pagesData)
-    .filter((page) => page.link?.startsWith('/interior-design/'))
+    .filter((page) => (page as { link?: string }).link?.startsWith('/interior-design/'))
     .map((page) => ({
-      slug: page.link.split('/').pop()!,
+      slug: (page as { link: string }).link.split('/').pop()!,
     }));
 }
 
@@ -23,7 +23,7 @@ async function Page({params}: {params: Promise<{slug: string}>}) {
   const {BASE_URL} = CONSTANTS;
   const {slug} = await params;
   const pageSlug = slug as PageDataKey;
-  const pageContent = (pagesData[pageSlug] as unknown) as LoadPageContent | undefined;
+  const pageContent = pagesData[pageSlug] as LoadPageContent;
 
   if (!pageContent) {
     notFound();
