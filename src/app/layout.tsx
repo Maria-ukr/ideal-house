@@ -3,6 +3,7 @@ import CustomCursor from '../components/CustomCursor/CustomCursor';
 import { Montaga } from "next/font/google";
 import localFont from "next/font/local";
 import { cn } from "@/src/lib/utils";
+import ChatWidget from "../components/ChatWidget/ChatWidget";
 import "./globals.css";
 
 const montaga = Montaga({
@@ -53,6 +54,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <CustomCursor />
         {children}
+        <ChatWidget />
       </body>
     </html>
   );

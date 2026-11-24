@@ -9,6 +9,7 @@ export interface PageHomeContent {
 
 
 export interface LoadPageContent {
+  link?: string;
   title: string;
   subtitle?: string;
   bgImage: string;
@@ -78,4 +79,33 @@ export interface VideoBgProps {
   videoSrc: string;
   classVideoBox?: string;
   poster: string;
+}
+
+export interface ProjectAddress {
+  address: string;
+  longitude: string;
+  latitude: string;
+}
+
+export interface ProjectGallerySection {
+  sideNote: string;
+  detailImage: string;
+  wideImage: string;
+}
+
+export interface ProjectItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  slug: string;
+  heroImage: string;
+  introDescription: string;
+  gallerySection: ProjectGallerySection;
+  fullWidthImage: string;
+  address: ProjectAddress;
+}
+
+export interface WorksSection {
+  link: string;
+  projects: Record<string, ProjectItem>;
 }

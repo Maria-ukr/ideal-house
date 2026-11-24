@@ -5,6 +5,19 @@ import { Fragment, useState } from 'react';
 import {motion, useScroll, useMotionValueEvent} from 'motion/react';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink, NavigationMenuPositioner } from '../ui/navigation-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '../ui/sheet';
+import pagesData from '@/src/data.json';
+
+type NavigationPage = {
+  link?: string;
+  title?: string;
+};
+
+const interiorDesignSubmenu = Object.values(pagesData as Record<string, NavigationPage>)
+  .filter((page) => page.link?.startsWith('/interior-design/'))
+  .map((page) => ({
+    title: page.title ?? '',
+    path: page.link!,
+  }));
 
 const navLinks = [
   {
@@ -14,24 +27,7 @@ const navLinks = [
   {
     title: "Interior Design",
     path: "/interior-design",
-    submenu: [
-      {
-        title: "Interior Architecture",
-        path: "/interior-design/interior-architecture",
-      },
-      {
-        title: "Lighting Design",
-        path: "/interior-design/lighting-design",
-      },
-      {
-        title: "Bedroom",
-        path: "/interior-design/bedroom",
-      },
-      {
-        title: "Commercial Interior Design",
-        path: "/interior-design/commercial-interior-design",
-      },
-    ]
+    submenu: interiorDesignSubmenu,
   },
   {
     title: "The brand",
@@ -62,6 +58,10 @@ const navLinks = [
   {
     title: "Careers",
     path: "/careers",
+  },
+  {
+    title: "Works",
+    path: "/works",
   },
   {
     title: "Contact",

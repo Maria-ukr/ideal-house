@@ -9,7 +9,7 @@ import { PageContent } from "@/src/types/index";
 
 function Page() {
   const pageContent = pagesData['contact'] as PageContent;
-    const {BASE_URL} = CONSTANTS;
+  const {BASE_URL} = CONSTANTS;
   return (
     <>
       <Header />

@@ -1,19 +1,48 @@
 import { NavigationMenu as NavigationMenuPrimitive } from "@base-ui/react/navigation-menu"
 import { cva } from "class-variance-authority"
+import { useEffect, useState } from "react"
 
 import { cn } from "@/src/lib/utils"
 import { CaretDownIcon } from "@phosphor-icons/react"
 
-function NavigationMenu({
+function NavigationMenu<Value = any>({
   align = "start",
   className,
   children,
+  value,
+  defaultValue,
+  onValueChange,
   ...props
-}: NavigationMenuPrimitive.Root.Props &
+}: NavigationMenuPrimitive.Root.Props<Value> &
   Pick<NavigationMenuPrimitive.Positioner.Props, "align">) {
+  const isControlled = value !== undefined
+  const [internalValue, setInternalValue] = useState<Value | null>(
+    defaultValue ?? null
+  )
+
+  useEffect(() => {
+    if (isControlled) {
+      return
+    }
+
+    const handleScroll = () => {
+      setInternalValue(null)
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [isControlled])
+
   return (
     <NavigationMenuPrimitive.Root
       data-slot="navigation-menu"
+      value={isControlled ? value : internalValue}
+      onValueChange={(nextValue, eventDetails) => {
+        if (!isControlled) {
+          setInternalValue(nextValue)
+        }
+        onValueChange?.(nextValue, eventDetails)
+      }}
       className={cn(
         "group/navigation-menu relative flex max-w-max flex-1 items-center justify-center",
         className

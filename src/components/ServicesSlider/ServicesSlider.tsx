@@ -20,7 +20,7 @@ interface PageItem {
   link: string;
 }
 
-const EXCLUDED_KEYS = new Set(["home", "careers", "contact", "about"]);
+const EXCLUDED_KEYS = new Set(["home", "careers", "contact", "works", "about"]);
 
 const pageList: PageItem[] = Object.entries(pagesData as Record<string, Partial<PageItem>>).filter(([key]) => (!EXCLUDED_KEYS.has(key))).map(([key, page]) => ({
   key,
