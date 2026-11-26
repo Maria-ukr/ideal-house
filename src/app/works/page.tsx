@@ -63,7 +63,7 @@ function Page() {
                 closeButton={false}
                 className='w-40 flex-col rounded-[3px] text-[#111]'
               >
-                <Link href={`${BASE_URL}${loc?.slug}`} className='flex flex-col gap-1'>
+                <Link href={`/works/${loc.slug}`} className='flex flex-col gap-1'>
                   <Image 
                     src={`${BASE_URL}${loc.cover}`} 
                     alt={loc.title}
